@@ -1,0 +1,37 @@
+[
+    {
+        "index": 0,
+        "nameEn": "Sunday",
+        "nameBn": "রবিবার"
+    },
+    {
+        "index": 1,
+        "nameEn": "Monday",
+        "nameBn": "সোমবার"
+    },
+    {
+        "index": 2,
+        "nameEn": "Tuesday",
+        "nameBn": "মঙ্গলবার"
+    },
+    {
+        "index": 3,
+        "nameEn": "Wednesday",
+        "nameBn": "বুধবার"
+    },
+    {
+        "index": 4,
+        "nameEn": "Thursday",
+        "nameBn": "বৃহস্পতিবার"
+    },
+    {
+        "index": 5,
+        "nameEn": "Friday",
+        "nameBn": "শুক্রবার"
+    },
+    {
+        "index": 6,
+        "nameEn": "Saturday",
+        "nameBn": "শনিবার"
+    }
+]

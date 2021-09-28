@@ -1,0 +1,62 @@
+[
+    {
+        "index": 0,
+        "nameEn": "Boishakh",
+        "nameBn": "বৈশাখ"
+    },
+    {
+        "index": 1,
+        "nameEn": "Joishtho",
+        "nameBn": "জ্যৈষ্ঠ"
+    },
+    {
+        "index": 2,
+        "nameEn": "Ashar",
+        "nameBn": "আষাঢ়"
+    },
+    {
+        "index": 3,
+        "nameEn": "Srabon",
+        "nameBn": "শ্রাবণ"
+    },
+    {
+        "index": 4,
+        "nameEn": "Bhadro",
+        "nameBn": "ভাদ্র"
+    },
+    {
+        "index": 5,
+        "nameEn": "Ashin",
+        "nameBn": "আশ্বিন"
+    },
+    {
+        "index": 6,
+        "nameEn": "Kartrik",
+        "nameBn": "কার্তিক"
+    },
+    {
+        "index": 7,
+        "nameEn": "Agrohayon",
+        "nameBn": "অগ্রহায়ন"
+    },
+    {
+        "index": 8,
+        "nameEn": "Poush",
+        "nameBn": "পৌষ"
+    },
+    {
+        "index": 9,
+        "nameEn": "Magh",
+        "nameBn": "মাঘ"
+    },
+    {
+        "index": 10,
+        "nameEn": "Falgun",
+        "nameBn": "ফাল্গুন"
+    },
+    {
+        "index": 11,
+        "nameEn": "Chaitro",
+        "nameBn": "চৈত্র"
+    }
+]
