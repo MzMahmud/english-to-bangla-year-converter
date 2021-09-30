@@ -29,11 +29,7 @@ public class DateKey implements Comparable<DateKey> {
 
     @Override
     public String toString() {
-        return "Date{" +
-                "day=" + day +
-                ", month=" + month +
-                ", year=" + year +
-                '}';
+        return day + "/" + month + "/" + year;
     }
 
     @Override

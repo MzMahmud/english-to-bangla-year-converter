@@ -2,14 +2,16 @@ package com.moazmahmud;
 
 import com.google.gson.Gson;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.DynamicTest;
+import org.junit.jupiter.api.TestFactory;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
+import java.util.stream.Stream;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DateConverterTest {
     private static DateKey[][] engToBngDateArray;
@@ -26,14 +28,20 @@ class DateConverterTest {
         );
     }
 
-    @Test
-    public void shouldConvertEnglishDatesToBangla() {
-        Arrays.stream(engToBngDateArray)
-              .forEach(engBngPair -> shouldMatchExpectedBanglaDate(engBngPair[0], engBngPair[1]));
+    @TestFactory
+    Stream<DynamicTest> gishouldTestAllDaysOfEnglishYear() {
+        return Arrays.stream(engToBngDateArray)
+                     .map(this::getDynamicTest);
+    }
+
+    DynamicTest getDynamicTest(DateKey[] engBngPair) {
+        return DynamicTest.dynamicTest(
+                engBngPair[0].toString(),
+                () -> shouldMatchExpectedBanglaDate(engBngPair[0], engBngPair[1])
+        );
     }
 
     public static void shouldMatchExpectedBanglaDate(DateKey englishDate, DateKey expectedBanglaDate) {
-        DateKey apiOutput = DateConverter.getBanglaDate(englishDate);
-        assertEquals(expectedBanglaDate, apiOutput);
+        assertEquals(expectedBanglaDate, DateConverter.getBanglaDate(englishDate));
     }
 }
