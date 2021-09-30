@@ -29,7 +29,7 @@ class DateConverterTest {
     }
 
     @TestFactory
-    Stream<DynamicTest> gishouldTestAllDaysOfEnglishYear() {
+    Stream<DynamicTest> shouldTestAllDaysOfEnglishYear() {
         return Arrays.stream(engToBngDateArray)
                      .map(this::getDynamicTest);
     }
